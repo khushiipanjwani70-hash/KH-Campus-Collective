@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KH Student Ambassador Program</title>
+  <meta name="description" content="Join the KH Student Ambassador Program and receive your unique ambassador identity.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page-wrapper">
+
+    <header class="header">
+      <div class="brand">KH<span>.</span></div>
+      <div class="header-label">AMBASSADOR PROGRAM</div>
+    </header>
+
+    <main>
+
+      <section class="hero">
+        <span class="tag">YOUR CAMPUS. YOUR IMPACT.</span>
+
+        <h1>Become a<br><span>Student Ambassador.</span></h1>
+
+        <p>
+          Make connections, represent our community, build your confidence,
+          and become part of something meaningful.
+        </p>
+
+        <div class="benefits">
+          <div class="benefit">✦ Build your communication skills</div>
+          <div class="benefit">✦ Grow your network</div>
+          <div class="benefit">✦ Get your own ambassador identity</div>
+        </div>
+      </section>
+
+      <section class="form-section" id="register">
+
+        <div class="form-heading">
+          <span class="section-label">APPLICATION FORM</span>
+          <h2>Let's get to know you.</h2>
+          <p>Fill in your details to generate your ambassador code.</p>
+        </div>
+
+        <form id="ambassadorForm">
+
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your full name"
+              required
+              maxlength="80"
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="phone">WhatsApp Number *</label>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="03XXXXXXXXX"
+              required
+              maxlength="20"
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="city">City *</label>
+            <input
+              type="text"
+              id="city"
+              placeholder="Enter your city"
+              required
+              maxlength="60"
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="college">School / College / University *</label>
+            <input
+              type="text"
+              id="college"
+              placeholder="Enter your institute name"
+              required
+              maxlength="120"
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="instagram">Instagram Username</label>
+            <input
+              type="text"
+              id="instagram"
+              placeholder="@username"
+              maxlength="60"
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="reason">Why do you want to become an ambassador? *</label>
+            <textarea
+              id="reason"
+              placeholder="Tell us a little about yourself..."
+              required
+              maxlength="500"
+            ></textarea>
+          </div>
+
+          <label class="checkbox-label">
+            <input type="checkbox" id="agreement" required>
+            <span>I confirm that the information I provided is correct.</span>
+          </label>
+
+          <button type="submit" class="submit-btn">
+            Generate My Ambassador Code →
+          </button>
+
+        </form>
+
+        <!-- Success screen -->
+        <div id="successSection" class="success-section hidden">
+
+          <div class="success-icon">✓</div>
+
+          <span class="section-label">APPLICATION RECEIVED</span>
+
+          <h2>You're one step closer!</h2>
+
+          <p class="success-text">
+            Your ambassador code has been generated.
+            Save it and send a screenshot to the program organizer
+            along with your full name.
+          </p>
+
+          <div class="code-card">
+            <span class="code-label">YOUR AMBASSADOR CODE</span>
+            <h3 id="ambassadorCode">KH-AMB-XXXX</h3>
+            <button type="button" id="copyCodeBtn" class="copy-btn">
+              Copy Code
+            </button>
+          </div>
+
+          <div class="instructions">
+            <strong>IMPORTANT — COMPLETE YOUR REGISTRATION</strong>
+            <p>
+              Take a screenshot of this code and send it to the
+              Student Ambassador Program organizer.
+            </p>
+            <p>
+              Include your full name so your code can be matched
+              to your application.
+            </p>
+          </div>
+
+          <button type="button" id="screenshotBtn" class="screenshot-btn">
+            📸 Screenshot My Code
+          </button>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="footer-brand">KH.</div>
+      <p>KH Student Ambassador Program</p>
+      <span>Make connections. Create impact.</span>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
